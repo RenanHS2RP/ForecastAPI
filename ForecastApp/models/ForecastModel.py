@@ -1,11 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class User(models.Model):
-    temperature = models.CharField(max_length=255)
-    atmosphere_pressure = models.EmailField(max_length=255)
+class Forecast(models.Model):
+    temperature = models.FloatField()
+    atmosphere_pressure = models.FloatField()
     humidity = models.IntegerField()
-    preceptation = models.
-    wheather_condition
+    preceptation = models.FloatField()
+    wheather_condition = models.TextChoices("ea", "eaae")
     time = models.DateTimeField()
-git checkout -b main
